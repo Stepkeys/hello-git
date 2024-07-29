@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+}
+
+.box2 {
+    width: 10px;
+    border: 1px solid #fff;
+}
+
+p {
+    width: 10px;
+}
+
+.cal {
+    width: 600px;
+    height: 650px;
+    color: rgb(223, 223, 238);
+    border: 3px;
+    background-image: conic-gradient(from var(--border-angle), #213, #312 50%, #413),
+        conic-gradient(from var(--border-angle), transparent 20%, #255, #345);
+    background-size: calc(100% - (var(--border-size)*2)) calc(100%=(var(--border-size)*2), cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+    box-shadow: 3px 3px 10px 10px #666;
+}
+
+.cal:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+input {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: right;
+    width: 600px;
+    height: 100px;
+    border: none;
+    font-size: 40px;
+    color: #06795c;
+    background-image: conic-gradient(from var(--border-angle), #230, #232, #235),
+        conic-gradient(from var(--border-angle), transparent 20%, #840, #845);
+    background-size: calc(100% - (var(--border-size)*2)) calc(100%=(var(--border-size)*2), cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+}
+
+input:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.key {
+    margin: 10px 80px;
+}
+
+#btn {
+    width: 100px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 1px #666;
+    margin: 3px;
+    color: #477fc493;
+    border: 3px;
+    background-image: conic-gradient(from var(--border-angle), #482, #442 50%, #432),
+        conic-gradient(from var(--border-angle), transparent 20%, #123, #358);
+    background-size: calc(100% - (var(--border-size)*2)) calc(100%=(var(--border-size)*2), cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn
+    }
+}
+
+#btn:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+#btn2 {
+    font-size: 20px;
+    width: 100px;
+    padding: 20px;
+    margin: 3px;
+    box-shadow: 2px 2px 1px 1px #666;
+    color: #c90c0c;
+    border: 3px;
+    background-image: conic-gradient(from var(--border-angle), #738, #739 50%, #740),
+        conic-gradient(from var(--border-angle), transparent 20%, #00f, #b11212);
+    background-size: calc(100% - (var(--border-size)*2)) calc(100%=(var(--border-size)*2), cover);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+    animation: bg-spin 3s linear infinite;
+}
+
+#btn2:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+span {
+    color: #00f;
+}
+
+button {
+    background-color: transparent;
+}
